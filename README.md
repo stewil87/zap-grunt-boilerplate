@@ -2,13 +2,23 @@
 > Grunt boilerplate with basic setup
 
 ### What's included?
+
 - grunt
+- grunt-cache-breaker
+- grunt-contrib-concat
 - grunt-contrib-uglify
 - grunt-contrib-watch
 - grunt-sass
-- jquery
+- jquery 3.3.1
 - load-grunt-tasks
 - node-sass
+
+#### Dependencies
+
+- autoprefixer
+- cssnano
+- grunt-bump
+- grunt-postcss
 
 ## Getting Started
 Make sure you have Node.js & Grunt installed:
@@ -27,13 +37,14 @@ For more information on Grunt, see the [Getting Started](http://gruntjs.com/gett
 [ '|-- ProjectRoot',
   '    |-- .gitignore',
   '    |-- Gruntfile.js',
-  '    |-- package-lock.json',
   '    |-- package.json',
   '    |-- readme.md',
-  '    |-- index.php
   '    |-- build',
   '    |   |-- css',
   '    |   |-- js',
+  '    |   |-- index.php,
+  '    |   |-- *icons*,
+  '    |   |-- *manifest files*,  
   '    |         ',
   '    |-- source',
   '        |-- js',
@@ -41,7 +52,7 @@ For more information on Grunt, see the [Getting Started](http://gruntjs.com/gett
   '        |   |-- main.js',
   '        |-- scss',
   '            |-- _reset.scss',
-  '            |-- styles.scss',
+  '            |-- style.scss',
   '' ]
 ```
 

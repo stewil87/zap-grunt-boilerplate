@@ -1,21 +1,20 @@
 {
   "name": "zapGruntBoilerplate",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "Common-extensions",
   "repository": {
     "type": "git",
     "url": "https://github.com/zapperpro/zap-grunt-boilerplate.git"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.4",
     "grunt-cache-breaker": "^2.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "^4.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^3.0.2",
-    "jquery": "^3.3.1",
-    "load-grunt-tasks": "^4.0.0",
-    "node-sass": "^4.11.0"
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "node-sass": "^4.12.0"
   },
   "main": "Gruntfile.js",
   "scripts": {
@@ -24,9 +23,13 @@
   "author": "zapperpro",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^9.4.9",
+    "autoprefixer": "^9.6.1",
     "cssnano": "^4.1.10",
     "grunt-bump": "^0.8.0",
     "grunt-postcss": "^0.9.0"
-  }
+  },
+  "browserslist": [
+    "last 3 versions",
+    "ie > 8"
+  ]
 }

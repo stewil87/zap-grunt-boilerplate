@@ -22,7 +22,7 @@ module.exports = function (grunt) {
                 options: {
                     match: [
                         {
-                            'js/main.min.js'    : 'build/js/main.min.js',
+                            'js/main.min.js' : 'build/js/main.min.js',
                             'css/style.css' : 'build/css/style.css'
                         }
                     ],
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
             options: {
                 map: true, // inline sourcemaps
                 processors: [
-                    require('autoprefixer')({browsers: ['last 5 versions', 'ie > 8']}), // add vendor prefixes
+                    require('autoprefixer')(), // add vendor prefixes
                     require('cssnano')() // minify the result
                 ]
             },
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
                 separator: ';',
             },
             dist: {
-                src: ['node_modules/jquery/dist/jquery.js', 'src/js/main.js'],
+                src: ['src/js/main.js'],
                 dest: 'build/js/main.js',
             },
         },
@@ -102,5 +102,4 @@ module.exports = function (grunt) {
 
     grunt.registerTask('versionup', ['bump:major']);
     grunt.registerTask('default', ['sass', 'postcss', 'concat', 'uglify', 'cachebreaker', 'bump:minor', 'watch']);
-
 };

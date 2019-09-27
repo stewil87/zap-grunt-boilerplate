@@ -9,7 +9,6 @@
 - grunt-contrib-uglify
 - grunt-contrib-watch
 - grunt-sass
-- jquery 3.3.1
 - load-grunt-tasks
 - node-sass
 
@@ -48,7 +47,6 @@ For more information on Grunt, see the [Getting Started](http://gruntjs.com/gett
   '    |         ',
   '    |-- source',
   '        |-- js',
-  '        |   |-- vendor',
   '        |   |-- main.js',
   '        |-- scss',
   '            |-- _reset.scss',
@@ -59,3 +57,5 @@ For more information on Grunt, see the [Getting Started](http://gruntjs.com/gett
 ## Included Grunt Tasks
 
 `default`
+
+`versionup`

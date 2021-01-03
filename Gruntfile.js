@@ -77,14 +77,14 @@ module.exports = function (grunt) {
         },
         watch: {
             css: {
-                files: ['src/scss/*/**'],
+                files: ['src/scss/**','src/scss/*/**'],
                 tasks: ['sass', 'postcss', 'cachebreaker', 'bump:patch'],
                 options: {
                     spawn: false,
                 },
             },
             js: {
-                files: ['src/js/*.js', 'src/js/vendor/**'],
+                files: ['src/js/**', 'src/js/vendor/**'],
                 tasks: ['concat', 'uglify', 'cachebreaker', 'bump:patch'],
                 options: {
                     spawn: false,

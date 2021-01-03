@@ -35,9 +35,9 @@
     <meta http-equiv="Cache-Control" content="no-cache">
 
     <!-- Twitter -->
-    <meta name="twitter:title" content="European Travel Destinations ">
-    <meta name="twitter:description" content=" Offering tour packages for individuals or groups.">
-    <meta name="twitter:image" content=" http://euro-travel-example.com/thumbnail.jpg">
+    <meta name="twitter:title" content="Title Here">
+    <meta name="twitter:description" content="description">
+    <meta name="twitter:image" content="http://example.com/image.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@website-username">
 
@@ -52,7 +52,7 @@
 	<meta property="og:description" content="description" />
 	<meta property="og:site_name" content="title" />
 
-    <meta name="fb:page_id" content="43929265776" />
+    <meta name="fb:page_id" content="1234" />
 
     <meta name="og:email" content="me@example.com"/>
     <meta name="og:phone_number" content="650-123-4567"/>
@@ -102,10 +102,10 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="css/style.css?rel=fdb7660afe">
+	<link rel="stylesheet" href="css/style.css?rel=3d2af40e11">
 </head>
 <body>
 
-<script src="js/main.min.js?rel=4e4fdbadb0"></script>
+<script src="js/main.min.js?rel=a331d7a701"></script>
 </body>
 </html>

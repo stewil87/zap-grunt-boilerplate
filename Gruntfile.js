@@ -1,6 +1,5 @@
 module.exports = function (grunt) {
 
-    const sass = require('node-sass');
     require('load-grunt-tasks')(grunt);
 
     grunt.initConfig({
@@ -33,27 +32,14 @@ module.exports = function (grunt) {
                 }
             }
         },
-        sass: {
-            options: {
-                implementation: sass,
-                sourceMap: false
-            },
-            dist: {
+        'dart-sass': {
+            target: {
+                options: {
+                    outputStyle: 'compressed'
+                },
                 files: {
                     'build/css/style.css': 'src/scss/style.scss'
                 }
-            }
-        },
-        postcss: {
-            options: {
-                map: true, // inline sourcemaps
-                processors: [
-                    require('autoprefixer')(), // add vendor prefixes
-                    require('cssnano')() // minify the result
-                ]
-            },
-            dist: {
-                src: 'build/css/*.css'
             }
         },
         concat: {
@@ -78,7 +64,7 @@ module.exports = function (grunt) {
         watch: {
             css: {
                 files: ['src/scss/**','src/scss/*/**'],
-                tasks: ['sass', 'postcss', 'cachebreaker', 'bump:patch'],
+                tasks: ['dart-sass', 'cachebreaker', 'bump:patch'],
                 options: {
                     spawn: false,
                 },
@@ -93,7 +79,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-dart-sass');
     grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-cache-breaker');
     grunt.loadNpmTasks('grunt-contrib-concat');
@@ -101,5 +87,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('versionup', ['bump:major']);
-    grunt.registerTask('default', ['sass', 'postcss', 'concat', 'uglify', 'cachebreaker', 'bump:minor', 'watch']);
+    grunt.registerTask('default', ['dart-sass', 'concat', 'uglify', 'cachebreaker', 'bump:minor', 'watch']);
 };

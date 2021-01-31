@@ -102,7 +102,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="css/style.css?rel=3d2af40e11">
+	<link rel="stylesheet" href="css/style.css?rel=c00b07b36b">
 </head>
 <body>
 

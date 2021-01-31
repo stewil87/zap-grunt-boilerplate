@@ -8,16 +8,12 @@
 - grunt-contrib-concat
 - grunt-contrib-uglify
 - grunt-contrib-watch
-- grunt-sass
 - load-grunt-tasks
-- node-sass
+- dart-sass
 
 #### Dependencies
 
-- autoprefixer
-- cssnano
 - grunt-bump
-- grunt-postcss
 
 ## Getting Started
 Make sure you have Node.js & Grunt installed:

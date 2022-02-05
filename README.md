@@ -1,6 +1,10 @@
 # Zap Grunt Boilerplate
 > Grunt boilerplate with basic setup
 
+### Node base
+
+Version 16.13.2
+
 ### What's included?
 
 - grunt
@@ -16,6 +20,7 @@
 - grunt-bump
 
 ## Getting Started
+
 Make sure you have Node.js & Grunt installed:
 
 - Install Node.js from [http://nodejs.org](http://nodejs.org)
@@ -45,7 +50,9 @@ For more information on Grunt, see the [Getting Started](http://gruntjs.com/gett
   '        |-- js',
   '        |   |-- main.js',
   '        |-- scss',
-  '            |-- _reset.scss',
+  '            |-- base 
+  '                |-- _index.scss
+  '                |-- reset.scss   
   '            |-- style.scss',
   '' ]
 ```
